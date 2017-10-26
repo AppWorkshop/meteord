@@ -1,8 +1,8 @@
-FROM abernix/meteord:base
-MAINTAINER Jesse Rosenberger
+FROM appworkshop/meteord:base
+MAINTAINER Mike Cunneen
 
 ARG NODE_VERSION
-ENV NODE_VERSION ${NODE_VERSION:-8.4.0}
+ENV NODE_VERSION ${NODE_VERSION:-8.8.1}
 
 ONBUILD RUN bash $METEORD_DIR/lib/install_meteor.sh
 ONBUILD COPY ./ /app
