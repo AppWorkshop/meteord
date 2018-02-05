@@ -94,7 +94,7 @@ docker run -d \
     -e MONGO_OPLOG_URL=mongodb://oplog_url \
     -v /mybundle_dir:/bundle \
     -p 8080:80 \
-    abernix/meteord:base
+    appworkshop/meteord:base
 ~~~
 
 With this method, MeteorD looks for the tarball version of the meteor bundle. So, you should build the meteor bundle for `os.linux.x86_64` and put it inside the `/bundle` volume. This is how you can build a meteor bundle.
@@ -114,7 +114,7 @@ docker run -d \
     -e MONGO_OPLOG_URL=mongodb://oplog_url \
     -e BUNDLE_URL=http://mybundle_url_at_s3.tar.gz \
     -p 8080:80 \
-    abernix/meteord:base
+    appworkshop/meteord:base
 ~~~
 
 #### 2.2 With Docker Compose
