@@ -12,7 +12,7 @@ function clean() {
 cd /tmp
 clean
 
-meteor create --release 1.6.1 hello
+meteor create --release 1.6.1.1 hello
 cd hello
 echo "process.on('SIGTERM', function () { console.log('SIGTERM RECEIVED'); });" >> server/main.js
 
@@ -22,7 +22,7 @@ docker run -d \
     -e ROOT_URL=http://yourapp_dot_com \
     -v /tmp/hello/:/bundle \
     -p 8080:80 \
-    abernix/meteord:base
+    appworkshop/meteord:base
 
 sleep 50
 
