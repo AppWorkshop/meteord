@@ -34,7 +34,7 @@ if [[ $REBUILD_NPM_MODULES ]]; then
     bash /opt/meteord/rebuild_npm_modules.sh
     cd ../../
   else
-    echo "=> Use abernix/meteord:bin-build for binary bulding."
+    echo "=> Use appworkshop/meteord:bin-build for binary bulding."
     exit 1
   fi
 fi

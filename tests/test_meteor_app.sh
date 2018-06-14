@@ -13,7 +13,7 @@ function clean() {
 cd /tmp
 clean
 
-meteor create --release 1.6.1.1 hello
+meteor create --release 1.7.0.2 hello
 cd hello
 echo "FROM appworkshop/meteord:node-${NODE_VERSION}-onbuild" > Dockerfile
 
