@@ -24,7 +24,7 @@ docker run -d \
     -p 8080:80 \
     appworkshop/meteord:base
 
-sleep 50
+sleep 120
 
 docker stop meteor-app
 found=`docker logs meteor-app | grep -c "SIGTERM RECEIVED"`
