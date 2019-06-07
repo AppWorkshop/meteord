@@ -12,7 +12,7 @@ function clean() {
 cd /tmp
 clean
 
-meteor create --release 1.7.0.5 hello
+meteor create --release 1.8.1 hello
 cd hello
 echo "process.on('SIGTERM', function () { console.log('SIGTERM RECEIVED'); });" >> server/main.js
 
@@ -24,7 +24,7 @@ docker run -d \
     -p 8080:80 \
     appworkshop/meteord:base
 
-sleep 120
+sleep 50
 
 docker stop meteor-app
 found=`docker logs meteor-app | grep -c "SIGTERM RECEIVED"`
